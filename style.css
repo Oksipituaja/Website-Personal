@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #00C2FF 0%, #0063F8 100%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background: rgb(66, 112, 249);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.brand {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.brand img {
+    margin-right: 10px;
+    max-height: 40px;
+    margin: 6px;
+}
+
+.firstname {
+    margin: 6px;
+    font-size: 25px;
+    color: crimson;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.lastname {
+    margin: 4px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.firstname:hover {
+    color: #fff
+}
+
+.lastname:hover {
+    color: crimson;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+nav{
+    text-decoration: none;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/* nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+} */
+
+/* label.logo {
+    color: whitesmoke;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+} */
+
+.logo_passus {
+    margin: 10px;
+    max-height: 50px;
+}
+
+.logo_smk {
+    margin: 10px;
+    max-height: 50px;
+}
+
+/* img {
+    margin: 10px;
+    max-height: 50px;
+} */
+
+nav a:hover,
+nav a.active {
+    color: crimson;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: #fff;
+    font-weight: 700;
+}
+
+section:nth-child(odd) {
+    background-color: rgba(62, 99, 212, 0.972);
+}
+
+#Home {
+    min-height: 110vh;
+    background: linear-gradient(90deg, #00C2FF 0%, #0063F8 100%);
+}
+#Struktur {
+    min-height: 135vh;
+    background: whitesmoke;
+}
+#Kegiatan {
+    background: #0063F8;
+    min-height: 130vh;
+}
+#Prestasi {
+    min-height: 138vh;
+    background: linear-gradient(90deg, #00C2FF 0%, #0063F8 100%);
+    
+}
+
+#isu-Sosial {
+    background-color: whitesmoke;
+}
+
+#TentangKami {
+    background-color: whitesmoke;
+}
+
+@media (max-width: 1270px) {
+    label.brand {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 110vh;
+        background: #2c3e50;
+        top: 110px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s ;
+    }
+    nav ul li {
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
